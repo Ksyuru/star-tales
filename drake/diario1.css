@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+html, body{
+    height: 100%;
+    background-color: #101010;
+    scroll-behavior: smooth;
+}
+
+/*--------------------------HEADER--------------------------------------*/
+header{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    background-color: #161616;
+    z-index: 1;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header li{
+    list-style-type: none;
+    padding-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header li:hover{
+    color: #ccc;
+    transition: 0.7s;
+}
+
+/*--------------------------CONTEUDO--------------------------------------*/
+
+.container-bg{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../imagens/drake/diario1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+}
+
+.container-bg h1{
+    font-size: 70px;
+    padding-top: 300;
+    color: #8e8361;
+    text-shadow: 3px 3px #2c291d;
+
+}
+
+.container-bg h6{
+    font-size: 20px;
+    color: #ddd7c3;
+    text-shadow: 2px 2px #2c291d;
+}
+
+.container-frase{
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    background-color: #101010;
+    border-bottom: #ddd7c3 solid 2px;
+
+}
+
+.container-frase h4{
+    font-size: 60px;
+    padding-top: 90px;
+    color: #ddd7c3;
+}
+
+.conto{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #101010;
+}
+
+.conto p{
+    font-size: 30px;
+    color: #ddd7c3;
+    padding: 50 30;
+}
+
+.img{
+    width: 100%;
+    height: 800px;
+    background-image: url(/imagens/drake/conto4img.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.img2{
+    width: 100%;
+    height: 800px;
+    background-image: url(/imagens/drake/conto4img2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/*--------------------------MEDIA QUERRIES HEADER--------------------------------------*/
+@media screen and (max-width: 753px){
+    header li{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 625px){
+    header li{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 486px){
+    header li{
+        font-size: 13px;
+    }
+}
+
+/*--------------------------MEDIA QUERRIES BACKGROUND--------------------------------------*/
+
+
+
+@media screen and (max-width: 1097px){
+    .container-bg h1{
+        font-size: 60px;
+        padding-top: 300;
+    }
+
+    .container-bg h6{
+        font-size: 18px;
+
+    }
+}
+
+@media screen and (max-width: 950px){
+    .container-bg h1{
+        font-size: 50px;
+    }
+
+    .container-bg h6{
+        font-size: 18px;
+
+    }
+}
+
+@media screen and (max-width: 790px){
+    .container-bg h1{
+        font-size: 40px;
+        padding-top: 350;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .container-bg h1{
+        font-size: 30px;
+        padding-top: 350;
+    }
+}
+
+
+/*--------------------------MEDIA QUERRIES FRASE--------------------------------------*/
+@media screen and (max-width:1460px){
+    .container-frase h4{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:1198px){
+    .container-frase h4{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:1080px){
+    .container-frase h4{
+        padding-top: 65px;
+    }
+}
+
+@media screen and (max-width:995px){
+    .container-frase h4{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 666px){
+    .container-frase h4{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 531px){
+    .container-frase h4{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .container-frase h4{
+        font-size: 22px;
+        padding-top: 90px;
+    }
+}
+
+/*--------------------------MEDIA QUERRIES CONTO--------------------------------------*/
+@media screen and (max-width: 895px){
+    .conto{
+        width: 90%;
+        margin: 0 auto;
+        background-color: #101010;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .conto{
+        width: 100%;
+        margin: 0 auto;
+        background-color: #101010;
+    }
+}
+/*--------------------------MEDIA QUERRIES IMAGENS--------------------------------------*/
+@media screen and (max-width: 771px){
+    .img{
+        background-position: 45%;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .img2{
+        background-position: 70%;
+    }
+}
+
+

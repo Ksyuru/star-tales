@@ -1,0 +1,751 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+html, body{
+    height: 100%;
+    background-color: #101010;
+    scroll-behavior: smooth;
+}
+/*--------------------------HEADER--------------------------------------*/
+header{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    background-color: #161616;
+    z-index: 1;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header li{
+    list-style-type: none;
+    padding-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header li:hover{
+    color: #ccc;
+    transition: 0.7s;
+}
+/*-------------------------APRESENTACAO---------------------------------*/
+section.apresentacao{
+    width: 100%;
+    height: 500px;
+    background-color: chocolate;
+}
+
+section.apresentacao .container-bg{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../imagens/drake/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.apresentacao .titulo{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+section.apresentacao .titulo h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(199, 142, 77);
+}
+
+section.apresentacao .titulo h6{
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white;
+}
+
+section.apresentacao .arrow{
+    width: 5%;
+    height: 80px;
+    background-image: url(/imagens/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+/*-------------------------INFO---------------------------------*/
+section.info{
+    width: 100%;
+    height: auto;
+    margin-top: 400px;
+    display: flex;
+}
+section.info .icon{
+    width: 25%;
+    height: 990px;
+    background-image: url(/imagens/drake/icon.png);
+    background-position: 45%;
+    background-size: cover;
+    border: 2px solid rgb(199, 142, 77);
+    border-right: 0px;
+}
+
+section.info .container{
+    width: 75%;
+    height: auto;
+    border: 2px solid rgb(199, 142, 77);
+}
+
+.frase{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-bottom: 2px solid rgb(199, 142, 77);
+    background-color:rgb(68, 62, 59);
+}
+
+.frase p{
+    padding-top: 20px;
+    font-size: 22px;
+    color: white;
+}
+
+.historia{
+    width: 100%;
+    height: 300px;
+    border-bottom: 2px solid rgb(199, 142, 77);
+    background-color:rgb(68, 62, 59);
+}
+
+.historia p{
+    padding: 60px 2%;
+    font-size: 22px;
+    color: white;
+}
+
+.nascimento{
+    width: 100%;
+    height: 100px;
+    
+}
+
+.nascimento h1{
+    color: white;
+    border-bottom: 2px solid rgb(199, 142, 77);
+    text-transform: uppercase;
+    padding: 0 1%;
+    background-color:rgb(50, 45, 43);
+}
+
+.nascimento h6{
+    height: 65px;
+    font-size: 22px;
+    color: white;
+    border-bottom: 2px solid rgb(199, 142, 77);
+    padding-top: 30px;
+    padding-left: 1%;
+    background-color:rgb(68, 62, 59);
+    font-weight: normal;
+}
+
+.morada{
+    width: 100%;
+    height: 100px;
+}
+
+.morada h1{
+    color: white;
+    border-bottom: 2px solid rgb(199, 142, 77);
+    text-transform: uppercase;
+    padding: 0 1%;
+    background-color:rgb(50, 45, 43);
+}
+
+.morada h6{
+    height: 65px;
+    font-size: 22px;
+    color: white;
+    border-bottom: 2px solid rgb(199, 142, 77);
+    padding-top: 30px;
+    padding-left: 1%;
+    background-color:rgb(68, 62, 59);
+    font-weight: normal;
+}
+
+.job{
+    width: 100%;
+    height: 100px;
+}
+
+.job h1{
+    color: white;
+    border-bottom: 2px solid rgb(199, 142, 77);
+    text-transform: uppercase;
+    padding: 0 1%;
+    background-color:rgb(50, 45, 43);
+}
+
+.job h6{
+    height: 65px;
+    font-size: 22px;
+    color: white;
+    border-bottom: 2px solid rgb(199, 142, 77);
+    padding-top: 30px;
+    padding-left: 1%;
+    background-color:rgb(68, 62, 59);
+    font-weight: normal;
+}
+
+.container-relacao{
+    width: 100%;
+    height: 253px;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(68, 62, 59);
+}
+
+section.info .titulo{
+    background-color:rgb(50, 45, 43);
+    color: white;
+    border-bottom: 2px solid rgb(199, 142, 77);
+    text-transform: uppercase;
+    padding: 0 1%;
+}
+
+.container-relacao .item1{
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+    padding-top: 150px;
+    background-image: url(/imagens/konan/icon.jpg);
+    background-size: cover;
+    background-position: 40%;
+    text-align: center;
+    color: white;
+    border: 3px solid #5a5a5a;
+    border-radius: 50% 50%;
+    cursor: pointer; 
+}
+
+
+.container-relacao .item1:hover{
+    color: #ccc;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.container-relacao .item2{
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+    padding-top: 150px;
+    background-image: url(/imagens/fuyuki/icon.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    border: 3px solid #5a5a5a;
+    border-radius: 50% 50%;
+    cursor: pointer;
+}
+
+.container-relacao .item2:hover{
+    color: #ccc;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.container-relacao .item3{
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+    padding-top: 150px;
+    background-image: url(/imagens/noc/icon.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    border: 3px solid #5a5a5a;
+    border-radius: 50% 50%;
+    cursor: pointer;
+}
+
+.container-relacao .item3:hover{
+    color: #ccc;
+    transition: .7s;
+    cursor: pointer;
+}
+/*-------------------------CONTOS---------------------------------*/
+section.contos{
+    width: 100%;
+    height: auto;
+}
+
+section.contos .titulo{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(199, 142, 77);
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+section.contos .container{
+    width: 100%;
+    height: auto;
+}
+
+section.contos .container .item1{
+    width: 100%;
+    height: auto;
+    height: 250px;
+    text-align: center;
+    margin-top: 30px;
+    background-image: url(/imagens/drake/conto1.png);
+    background-position: 50% 10%;
+    background-size: cover;
+    border-top: 2px solid rgb(199, 142, 77);
+    border-bottom: 2px solid rgb(199, 142, 77);
+    cursor: pointer;
+}
+
+section.contos .container .item1 h1{
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    padding-top: 100px;
+    font-size: 38px;
+    height: 250px;
+    padding: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section.contos .container .item1 h1:hover{
+    color: #ccc;
+    transition: .7s;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+section.contos .container .item2{
+    width: 100%;
+    height: auto;
+    height: 250px;
+    text-align: center;
+    margin-top: 30px;
+    background-image: url(/imagens/drake/conto2.png);
+    background-position: 0% 25%;
+    background-size: cover;
+    border-top: 2px solid rgb(199, 142, 77);
+    border-bottom: 2px solid rgb(199, 142, 77);
+    cursor: pointer;
+}
+
+section.contos .container .item2 h1{
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    padding-top: 100px;
+    font-size: 38px;
+    height: 250px;
+    padding: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section.contos .container .item2 h1:hover{
+    color: #ccc;
+    transition: .7s;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+section.contos .container .item3{
+    width: 100%;
+    height: auto;
+    height: 250px;
+    text-align: center;
+    margin-top: 30px;
+    background-image: url(/imagens/drake/conto3.png);
+    background-position: 0% 25%;
+    background-size: cover;
+    border-top: 2px solid rgb(199, 142, 77);
+    border-bottom: 2px solid rgb(199, 142, 77);
+    cursor: pointer;
+}
+
+section.contos .container .item3 h1{
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    padding-top: 100px;
+    font-size: 38px;
+    height: 250px;
+    padding: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section.contos .container .item3 h1:hover{
+    color: #ccc;
+    transition: .7s;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+section.contos .container .item4{
+    width: 100%;
+    height: auto;
+    height: 250px;
+    text-align: center;
+    margin-top: 30px;
+    background-image: url(/imagens/drake/conto4.png);
+    background-position: 0% 25%;
+    background-size: cover;
+    border-top: 2px solid rgb(199, 142, 77);
+    border-bottom: 2px solid rgb(199, 142, 77);
+    cursor: pointer;
+}
+
+section.contos .container .item4 h1{
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    font-size: 38px;
+    height: 250px;
+    padding: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+section.contos .container .item4 h1:hover{
+    color: #ccc;
+    transition: .7s;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+section.contos .container .item5{
+    width: 100%;
+    height: auto;
+    height: 250px;
+    text-align: center;
+    margin-top: 30px;
+    background-image: url(/imagens/konan/conto5.jpg);
+    background-position: 0% 30%;
+    background-size: cover;
+    border-top: 2px solid rgb(199, 142, 77);
+    border-bottom: 2px solid rgb(199, 142, 77);
+    cursor: pointer;
+}
+
+section.contos .container .item5 h1{
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    padding-top: 100px;
+    font-size: 38px;
+    height: 250px;
+    padding: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section.contos .container .item5 h1:hover{
+    color: #ccc;
+    transition: .7s;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+footer{
+    background-color: #161616;
+    color: white;
+    height: 50px;
+    border-top: 2px solid white;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+/*--------------------------MEDIA QUERRIES HEADER--------------------------------------*/
+@media screen and (max-width: 753px){
+    header li{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 625px){
+    header li{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 486px){
+    header li{
+        font-size: 13px;
+    }
+}
+/*--------------------------BACKGROUND--------------------------------------*/
+@media screen and (max-width: 550px){
+    section.apresentacao .container-bg{
+            width: 100%;
+            height: 80vh;
+            background-image: url(../imagens/drake/background.jpg);
+            background-position: 65% 0%;
+            background-size: cover;
+        }
+    }
+
+/*--------------------------INFO--------------------------------------*/
+
+@media screen and (max-width: 1000px){
+    section.info{
+        width: 100%;
+        margin-top: 400px;
+        display: block;
+    }
+    section.info .icon{
+        width: 300px;
+        height: 300px;
+        border-right: 2px solid rgb(199, 142, 77);
+        margin: 0 auto;
+        margin-bottom: 30px;
+        border-radius: 50%;
+    }
+    
+    section.info .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .container-relacao{
+        height: auto;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width: 855px){
+    section.info .icon{
+        width: 300px;
+        height: 300px;
+        border-right: 2px solid rgb(199, 142, 77);
+        margin: 0 auto;
+        margin-bottom: 30px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 770px){
+    
+    .frase p{
+        font-size: 20px;
+    }
+    
+    .historia p{
+        font-size: 20px;
+    }
+    
+    .nascimento h1{
+        height: auto;
+        font-size: 22px;
+    }
+    
+    .nascimento h6{
+        height: 68px;
+        font-size: 20px;
+    }
+    
+    .morada h1{
+        height: auto;
+        font-size: 22px;
+    }
+    
+    .morada h6{
+        height: 68px;
+        font-size: 20px;
+    }
+    
+    .job h1{
+        height: auto;
+        font-size: 22px;
+    }
+    
+    .job h6{
+        height: 68px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .frase p{
+        padding-top: 30px;
+        font-size: 17px;
+    }
+    
+    .historia p{
+        font-size: 17px;
+    }
+    
+    .nascimento h1{
+        height: auto;
+        font-size: 17px;
+    }
+    
+    .nascimento h6{
+        height: 75px;
+        font-size: 17px;
+    }
+    
+    .morada h1{
+        height: auto;
+        font-size: 17px;
+    }
+    
+    .morada h6{
+        height: 75px;
+        font-size: 17px;
+    }
+    
+    .job h1{
+        height: auto;
+        font-size: 17px;
+    }
+    
+    .job h6{
+        height: 75px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .frase p{
+        padding-top: 30px;
+        font-size: 16px;
+    }
+
+    .historia p{
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 565px){
+    .frase p{
+        padding-top: 20px;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 482px){
+    .historia p{
+        padding-top: 15px;
+        font-size: 16px;
+    }
+
+    .frase p{
+        font-size: 16px;
+    }
+}
+/*--------------------------CONTOS--------------------------------------*/
+@media screen and (max-width: 753px){
+    section.contos .container .item1 h1{
+        font-size: 34px;
+    }
+
+    section.contos .container .item2 h1{
+        font-size: 34px;
+    }
+
+    section.contos .container .item3 h1{
+        font-size: 34px;
+    }
+
+    section.contos .container .item4 h1{
+        font-size: 34px;
+    }
+
+    section.contos .container .item5 h1{
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 665px){
+    section.contos .container .item1 h1{
+        font-size: 30px;
+    }
+
+    section.contos .container .item2 h1{
+        font-size: 30px;
+    }
+
+    section.contos .container .item3 h1{
+        font-size: 30px;
+    }
+
+    section.contos .container .item4 h1{
+        font-size: 30px;
+    }
+
+    section.contos .container .item5 h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 612px){
+    section.contos .container .item1 h1{
+        font-size: 28px;
+    }
+
+    section.contos .container .item2 h1{
+        font-size: 28px;
+    }
+
+    section.contos .container .item3 h1{
+        font-size: 28px;
+    }
+
+    section.contos .container .item4 h1{
+        font-size: 28px;
+    }
+
+    section.contos .container .item5 h1{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 587px){
+    section.contos .container .item1 h1{
+        font-size: 25px;
+    }
+
+    section.contos .container .item2 h1{
+        font-size: 25px;
+    }
+
+    section.contos .container .item3 h1{
+        font-size: 25px;
+    }
+
+    section.contos .container .item4 h1{
+        font-size: 25px;
+    }
+
+    section.contos .container .item5 h1{
+        font-size: 25px;
+    }
+}
