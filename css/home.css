@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html, body{
+    height: 100%;
+    background-color: #101010;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*--------------------------HEADER--------------------------------------*/
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #161616;
+    position: fixed;
+    z-index: 1;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header li{
+    list-style-type: none;
+    padding-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header li:hover{
+    color: #ccc;
+    transition: 0.7s;
+}
+/*-------------------------APRESENTACAO---------------------------------*/
+section.apresentacao{
+    width: 100%;
+    height: 500px;
+    background-color: #101010;
+}
+
+.apresentacao .container{
+    width: 70%;
+    height: 300px;
+    position: relative;
+    left: 15%;
+    top: 27%;
+    border: 3px solid rgb(197, 154, 89);
+    border-radius: 10px;
+
+}
+
+.apresentacao p{
+    text-align: center;
+    padding: 90 10px;
+    color: rgb(206, 180, 119);
+}
+/*-------------------------PERSONAGENS---------------------------------*/
+section.personagens{
+    width: 100%;
+    height: auto;
+    background-color: #101010;
+}
+
+section.personagens h1{
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: rgb(199, 142, 77);
+}
+
+section.personagens .container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    height: 500;
+    flex-wrap: wrap;
+}
+
+section.personagens .container .item1{
+    width: 25%;
+    text-align: center;
+    background-image: url(../imagens/drake/icon.png);
+    background-position: 40% 0;
+    background-size: cover;
+    border: 2px solid rgb(197, 154, 89);
+    border-right: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.personagens .container h1{
+    font-size: 25px;
+    padding-top: 400px;
+    color: white;
+}
+
+section.personagens .container h1:hover{
+    color: #ccc;
+    transition: 0.7s;
+}
+
+section.personagens .container .item2{
+    width: 25%;
+    text-align: center;
+    background-image: url(../imagens/konan/icon.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid rgb(197, 154, 89);
+    border-right: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.personagens .container .item3{
+    width: 25%;
+    text-align: center;
+    background-image: url(../imagens/fuyuki/icon.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid rgb(197, 154, 89);
+    border-right: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.personagens .container .item4{
+    width: 25%;
+    text-align: center;
+    background-image: url(../imagens/noc/icon.png);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*-------------------------CONTOS---------------------------------*/
+section.contos{
+    width: 100%;
+    height: auto;
+    background-color: #101010;
+}
+
+section.contos h1{
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: rgb(199, 142, 77);
+}
+
+section.contos .container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+section.contos .container .item1{
+    width: 25%;
+    text-align: center;
+    background-image: url(../imagens/konan/conto1.jpg);
+    background-position: 50% 0;
+    background-size: cover;
+    border: 2px solid rgb(197, 154, 89);
+    border-right: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.contos .container h1{
+    font-size: 25px;
+    padding-top: 400px;
+    color: white
+}
+
+section.contos .container h1:hover{
+    color: #ccc;
+    transition: 0.7s;
+}
+
+section.contos .container .item2{
+    width: 25%;
+    text-align: center;
+    background-image: url(../imagens/drake/conto1.png);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid rgb(197, 154, 89);
+    border-right: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.contos .container .item3{
+    width: 25%;
+    text-align: center;
+    background-image: url(../imagens/noc/conto1.png);
+    background-position: 35% 0;
+    background-size: cover;
+    border: 2px solid rgb(197, 154, 89);
+    border-right: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.contos .container .item4{
+    width: 25%;
+    text-align: center;
+    background-image: url(../imagens/fuyuki/conto1.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*-------------------------DESTAQUES------------------------------*/
+
+section.destaque{
+    width: 100%;
+    height: auto;
+    background-color: #101010;
+}
+
+section.destaque h1{
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: rgb(199, 142, 77);
+}
+
+section.destaque .container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    height: auto;
+}
+
+section.destaque .container .item{
+    width: 100%;
+    height: 675px;
+    text-align: center;
+    background-image: url(../imagens/drake/conto4.png);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.destaque .container .item h1{
+    font-size: 35px;
+    color: white;
+    padding-top: 520px;
+}
+
+section.destaque .container .item h1:hover{
+    color: #ccc;
+    transition: 0.7s;
+}
+/*-------------------------NOVO------------------------------*/
+section.novo{
+    width: 100%;
+    height: auto;
+    background-color: #101010;
+}
+
+section.novo h1{
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: rgb(199, 142, 77);
+}
+
+section.novo .container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    height: auto;
+}
+
+section.novo .container .item{
+    width: 100%;
+    height: 675px;
+    text-align: center;
+    background-image: url(../imagens/konan/conto5.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.novo .container .item h1{
+    font-size: 35px;
+    color: white;
+    padding-top: 590px;
+}
+
+section.novo .container .item h1:hover{
+    color: #ccc;
+    transition: 0.7s;
+}
+
+footer{
+    background-color: #161616;
+    color: white;
+    height: 50px;
+    border-top: 2px solid white;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+/*--------------------------MEDIA QUERRIES------------------------------*/
+@media screen and (max-width: 1000px){
+
+    header li{
+        list-style-type: none;
+        padding-top: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    section.personagens .container .item1{
+        width: 50%;
+    }
+    
+    section.personagens .container .item2{
+        width: 50%;
+    }
+    
+    section.personagens .container .item3{
+        width: 50%;
+    }
+    
+    section.personagens .container .item4{
+        width: 50%;
+    }
+
+    section.personagens .container h1{
+        font-size: 25px;
+        padding-top: 200px;
+        color: white
+    }
+
+    section.contos .container .item1{
+        width: 50%;
+    }
+
+    section.contos .container .item2{
+        width: 50%;
+    }
+
+    section.contos .container .item3{
+        width: 50%;
+    }
+
+    section.contos .container .item4{
+        width: 50%;
+    }
+
+    section.contos .container h1{
+        font-size: 25px;
+        padding-top: 200px;
+        color: white
+    }
+}
+/*------------------------------875---------------------------*/
+@media screen and (max-width: 875px){
+    .apresentacao p{
+        top: 0;
+        text-align: center;
+        padding: 50 10px;
+    }
+}
+
+/*-------------620------------------------*/
+@media screen and (max-width: 620px){
+    header li{
+        padding-top: 25px;
+        font-size: 16px;
+    }
+
+    section.destaque .container .item{
+        height: 575px;
+    }
+
+    section.destaque .container .item h1{
+        font-size: 28px;
+        padding-top: 480px;
+    }
+}
+/*------------------------------555------------------------------*/
+@media screen and (max-width: 555px){
+
+    header li{
+        padding-top: 30px;
+        font-size: 14px;
+    }
+
+    .apresentacao p{
+        top: 0;
+        text-align: center;
+        padding: 50 10px;
+        font-size: 13px;
+    }
+
+    section.contos .container .item1{
+        background-position: center;
+        width: 50%;
+    }
+
+    section.contos .container .item2{
+        background-position: 45% 0%;
+        width: 50%;
+    }
+
+    section.contos .container .item3{
+        background-position: 30% 0%;
+        width: 50%;
+    }
+
+    section.contos .container .item4{
+        width: 50%;
+    }
+
+    section.contos .container h1{
+        font-size: 15px;
+        padding-top: 200px;
+    }
+
+}
+/*----------------475px-----------------*/
+@media screen and (max-width: 475px){
+    header li{
+        padding-top: 30px;
+        font-size: 12px;
+    }
+}

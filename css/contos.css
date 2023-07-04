@@ -1,0 +1,1563 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans';
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+html, body{
+    height: 100%;
+    background-color: #101010;
+    scroll-behavior: smooth;
+}
+
+/*--------------------------HEADER--------------------------------------*/
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #161616;
+    position: fixed;
+    z-index: 1;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header li{
+    list-style-type: none;
+    padding-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header li:hover{
+    color: #ccc;
+    transition: 0.7s;
+}
+/*--------------------------DESTAQUE--------------------------------------*/
+section.destaque{
+    width: 100%;
+    height: 55vh;
+    display: block;
+    padding-top: 50px;
+}
+
+section.destaque .container{
+    width: 100%;
+    height: auto;
+}
+
+section.destaque .bg{
+    width: 100%;
+    height: 420px;
+    background-image: url(../imagens/drake/conto4.png);
+    background-position: 1% 35%;
+    order: 2;
+}
+
+section.destaque .item{
+    width: 40%;
+    height: 420px;
+    order: 1;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+section.destaque h1{
+    color: white;
+    text-transform: uppercase;
+    padding: 60 3%;
+    font-size: 35px;
+}
+
+section.destaque p{
+    color: white;
+    padding: 0 3%;
+}
+
+section.destaque input{
+    width: 25%;
+    height: 45px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(24, 24, 25);
+    border: 2px solid rgb(4, 126, 207);
+    color: rgb(161, 213, 248);
+    margin-left: 20%;
+    margin-top: 30px;
+}
+
+section.destaque input:hover{
+    cursor: pointer;
+    color: rgb(196, 230, 253);
+}
+/*--------------------------CRONO--------------------------------------*/
+section.crono{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 60px;
+}
+
+section.crono .container{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+section.crono .container h1{
+    font-size: 25px;
+    padding-top: 400px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.crono .container h1:hover{
+    color: #ccc;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+section.crono .titulo h1{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 5%;
+    color: white;
+}
+
+section.crono .container .item1{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/konan/conto1.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 22px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item2{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/konan/conto2.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item3{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/konan/conto3.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item4{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/konan/conto4.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item5{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/konan/conto5.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 22px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item6{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/noc/conto1.png);
+    background-position: 30%;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item7{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/noc/conto2.png);
+    background-position: center;
+    background-size: 160% 100%;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item8{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/drake/conto1.png);
+    background-position: 45%;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item9{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/noc/conto3.png);
+    background-position: 20%;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 22px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item10{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/drake/conto2.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item11{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/fuyuki/conto1.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item12{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/fuyuki/conto2.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item13{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/fuyuki/conto3.jpg);
+    background-position: right;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 22px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item14{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/noc/conto4.png);
+    background-position: center;
+    background-size: 240% 100%;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item15{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/drake/conto3.png);
+    background-position: 65%;
+    cursor: pointer;
+    background-size: cover;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.crono .container .item16{
+    width: 23%;
+    height: auto;
+    background-image: url(../imagens/drake/conto4.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+/*--------------------------CONTOS--------------------------------------*/
+/*DRAKE*/
+section.contos{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+
+section.contos .container-drake{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+section.contos .titulo h1{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 5%;
+    color: white;
+}
+
+section.contos .container-drake .drake{
+    display: flex;
+}
+
+section.contos .container-drake .drake h1{
+    font-size: 25px;
+    padding-top: 400px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.contos .container-drake .drake h1:hover{
+    color: #ccc;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+section.contos .container-drake .titulo h1{
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.drake .item1{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/drake/conto1.png);
+    background-position: 45%;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+.drake .item2{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/drake/conto2.png);
+    background-position: 45%;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+.drake .item3{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/drake/conto3.png);
+    background-position: 65%;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+.drake .item4{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/drake/conto4.png);
+    background-position: 45%;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+
+/*KONAN*/
+section.contos .container-konan .konan{
+    display: flex;
+}
+
+section.contos .container-konan .titulo h1{
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+section.contos .container-konan .konan h1{
+    font-size: 25px;
+    padding-top: 400px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.contos .container-konan .konan h1:hover{
+    color: #ccc;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.konan .item1{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/konan/conto1.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+.konan .item2{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/konan/conto2.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+.konan .item3{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/konan/conto3.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+.konan .item4{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/konan/conto4.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+.konan .item5{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/konan/conto5.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+/*FUYUKI*/
+section.contos .container-fuyuki .fuyuki{
+    display: flex;
+}
+
+section.contos .container-fuyuki .fuyuki h1{
+    font-size: 25px;
+    padding-top: 400px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.contos .container-fuyuki .titulo h1{
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+section.contos .container-fuyuki .fuyuki h1:hover{
+    color: #ccc;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.fuyuki .item1{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/fuyuki/conto1.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+.fuyuki .item2{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/fuyuki/conto2.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+.fuyuki .item3{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/fuyuki/conto3.jpg);
+    background-position: right;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+
+
+/*NOC*/ 
+section.contos .container-noc .noc{
+    display: flex;
+}
+
+section.contos .container-noc .titulo h1{
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+section.contos .container-noc .noc h1{
+    font-size: 25px;
+    padding-top: 400px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.contos .container-noc .noc h1:hover{
+    color: #ccc;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.noc .item1{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/noc/conto1.png);
+    background-position: 30%;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+
+    border-radius: 10px;
+}
+
+.noc .item2{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/noc/conto2.png);
+    background-position: left;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+
+    border-radius: 10px;
+}
+
+.noc .item3{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/noc/conto3.png);
+    background-position: 20%;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+.noc .item4{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/noc/conto4.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+/*--------------------------QUADRINHOS--------------------------------------*/
+section.quadrinhos{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+
+section.quadrinhos .container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+section.quadrinhos .titulo h1{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 5%;
+    color: white;
+    margin-bottom: 30px;
+}
+
+section.quadrinhos .container h1{
+    font-size: 25px;
+    padding-top: 400px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.quadrinhos .container .item1{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/drake/conto2.png);
+    background-position: 65%;
+    cursor: pointer;
+    background-size: cover;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+/*--------------------------DIÁRIO--------------------------------------*/
+section.diario{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+
+section.diario .container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+section.diario .titulo h1{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 5%;
+    color: white;
+    margin-bottom: 30px;
+}
+
+section.diario .container h1{
+    font-size: 25px;
+    padding-top: 400px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.diario .container .item1{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/drake/diario1.png);
+    background-position: center;
+    cursor: pointer;
+    background-size: cover;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+
+section.diario .container .item2{
+    width: 20%;
+    height: auto;
+    background-image: url(../imagens/drake/diario2.png);
+    background-position: left;
+    cursor: pointer;
+    background-size: cover;
+    margin:5 5px;
+    border: 2px solid rgb(197, 154, 89);
+    border-radius: 10px;
+}
+/*--------------------------MEDIA QUERRIES HEADER--------------------------------------*/
+@media screen and (max-width: 753px){
+    header li{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 625px){
+    header li{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 486px){
+    header li{
+        font-size: 13px;
+    }
+}
+/*--------------------------MEDIA QUERRIES DESTAQUES--------------------------------------*/
+@media screen and (max-width: 1270px){       
+    section.destaque h1{
+        font-size: 30px;
+    }
+    
+    section.destaque p{
+        font-size: 16px;
+    }   
+   
+        section.destaque input{
+            font-size: 16px;
+        }
+}
+
+
+    
+@media screen and (max-width: 1096px){       
+    section.destaque h1{
+        font-size: 25px;
+    }
+
+    section.destaque .bg{
+        background-position: 20% 35%;
+    }
+    
+    section.destaque p{
+        font-size: 15px;
+    }  
+
+    section.destaque input{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 902px){       
+    section.destaque h1{
+        font-size: 20px;
+    }
+    
+    section.destaque p{
+        font-size: 14px;
+    }  
+
+    section.destaque input{
+        width: 40%;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 804px){       
+    section.destaque .bg{
+        background-position: 28% 35%;
+    }   
+}
+
+@media screen and (max-width: 735px){       
+    section.destaque h1{
+        font-size: 18px;
+    }  
+}
+
+@media screen and (max-width: 671px){          
+    section.destaque .bg{
+        background-position: 55% 35%;
+    }
+    
+    section.destaque .item{
+        width: 100%;
+    }
+    
+    section.destaque h1{
+        font-size: 35px;
+    }
+    
+    section.destaque p{
+        font-size: 15px;
+    }
+    
+    section.destaque input{
+        width: 25%;
+        font-size: 16px;
+        margin-left: 3%;
+        margin-top: 80px;
+    }
+    
+}
+
+@media screen and (max-width: 517px){
+    section.destaque h1{
+        font-size: 30px;
+    }
+
+    section.destaque p{
+        font-size: 14px;
+    }
+
+    section.destaque input{
+        font-size: 14px;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 445px){
+    section.destaque h1{
+        font-size: 25px;
+    }
+}
+
+/*--------------------------MEDIA QUERRIES CRONO--------------------------------------*/
+@media screen and (max-width: 1611px){
+          
+    section.crono .container .item1{
+        background-position: 60% 0%;
+    }
+    
+    section.crono .container .item3{
+        background-position: 35%;
+    }
+    
+    section.crono .container .item7{
+        background-position: 40%;
+    }
+    
+    section.crono .container .item12{
+        background-position: 58%;
+    }
+    
+    section.crono .container .item13{
+        background-position: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 1280px){
+    
+    section.crono .container .item7{
+        background-position: 20%;
+        background-size: cover;
+    }
+
+    section.crono .container .item9{
+        background-position: 30%;
+        background-size: cover;
+    }
+    
+    section.crono .container .item12{
+        background-position: 75%;
+    }
+    
+    section.crono .container .item13{
+        background-position: 80%;
+    }
+
+    section.crono .container .item14{
+        background-position: 30%;
+        background-size: cover;
+    } 
+}
+
+@media screen and (max-width: 1245px){
+    section.crono .container{
+        width: 85%;
+    } 
+}
+
+@media screen and (max-width: 1100px){
+    section.crono .container{
+        width: 95%;
+    } 
+
+    section.crono .container h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+  
+    section.crono .container .item8{
+        background-position: 60%;
+    }     
+}
+
+@media screen and (max-width: 986px){
+    section.crono .container{
+        width: 100%;
+    } 
+
+    section.crono .container .item1{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item2{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item3{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item4{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item5{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item6{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item7{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item8{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item9{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item10{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item11{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item12{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item13{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item14{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item15{
+        margin: 5px 0;
+    } 
+
+    section.crono .container .item16{
+        margin:5px 0;
+    } 
+}
+
+@media screen and (max-width: 795px){
+    section.crono .container{
+        justify-content: none;
+    }
+
+    section.crono .container .item1{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item2{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item3{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item4{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item5{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item6{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item7{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item8{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item9{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item10{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item11{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item12{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item13{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item14{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item15{
+        width: 28%;
+        margin: 5px 15;
+    }
+
+    section.crono .container .item16{
+        width: 28%;
+        margin: 5px 15;
+    }
+}
+
+@media screen and (max-width: 575px){
+    section.crono .container{
+        justify-content: none;
+    }
+
+    section.crono .container .item1{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item2{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item3{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item4{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item5{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item6{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item7{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item8{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item9{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item10{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item11{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item12{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item13{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item14{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item15{
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    section.crono .container .item16{
+        width: 50%;
+        margin: 5px 0;
+    }
+}
+/*---------------------------MEDIA QUERRIES CONTOS DRAKE------------------------------------*/
+@media screen and (max-width: 1245px){
+    section.contos .container-drake .drake h1{
+        font-size: 21px;
+    }
+
+
+    .drake .item1{
+        width: 25%;
+    }
+
+    .drake .item2{
+        width: 25%;
+        background-position: center;
+    }
+
+    .drake .item3{
+        width: 25%;
+    }
+
+    .drake .item4{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 795px){
+
+    section.contos .container-drake .drake h1{
+        font-size: 19px;
+    }
+
+
+    .drake .item1{
+        width: 30%;
+        background-position: 50%;
+    }
+
+    .drake .item2{
+        width: 30%;
+    }
+
+    .drake .item3{
+        width: 30%;
+    }
+
+    .drake .item4{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 635px){
+    section.contos .container-drake .drake h1{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .drake .item1{
+        width: 45%;
+        background-position: 50%;
+    }
+
+    .drake .item2{
+        width: 45%;
+    }
+
+    .drake .item3{
+        width: 45%;
+    }
+
+    .drake .item4{
+        width: 45%;
+    }
+}
+
+/*---------------------------MEDIA QUERRIES CONTOS konan------------------------------------*/
+@media screen and (max-width: 1375px){
+    .konan .item1{
+        background-position: 55%;
+    }
+}
+
+@media screen and (max-width: 1245px){
+    section.contos .container-konan .konan h1{
+        font-size: 21px;
+    }
+
+
+    .konan .item1{
+        width: 25%;
+    }
+
+    .konan .item2{
+        width: 25%;
+        background-position: center;
+    }
+
+    .konan .item3{
+        width: 25%;
+    }
+
+    .konan .item4{
+        width: 25%;
+    }
+
+    .konan .item5{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 845px){
+    .konan .item1{
+        background-position: 60%;
+    }
+
+    .konan .item3{
+        background-position: 40%;
+    }
+}
+
+@media screen and (max-width: 795px){
+    section.contos .container-konan .konan h1{
+        font-size: 21px;
+    }
+
+    .konan .item1{
+        width: 30%;
+    }
+
+    .konan .item2{
+        width: 30%;
+        background-position: center;
+    }
+
+    .konan .item3{
+        width: 30%;
+    }
+
+    .konan .item4{
+        width: 30%;
+    }
+
+    .konan .item5{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 635px){
+    section.contos .container-konan .konan h1{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .konan .item1{
+        width: 45%;
+    }
+
+    .konan .item2{
+        width: 45%;
+    }
+
+    .konan .item3{
+        width: 45%;
+    }
+
+    .konan .item4{
+        width: 45%;
+    }
+
+    .konan .item5{
+        width: 45%;
+    }
+}
+/*---------------------------MEDIA QUERRIES CONTOS FUYUKI------------------------------------*/
+@media screen and (max-width: 1500px){
+    .fuyuki .item2{
+        background-position: 60%;
+    }
+
+    .fuyuki .item3{
+        background-position: 75%;
+    }
+}
+
+@media screen and (max-width: 1245px){
+    section.contos .container-fuyuki .fuyuki h1{
+        font-size: 21px;
+    }
+
+
+    .fuyuki .item1{
+        width: 25%;
+    }
+
+    .fuyuki .item2{
+        width: 25%;
+    }
+
+    .fuyuki .item3{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 795px){
+    section.contos .container-fuyuki .fuyuki h1{
+        font-size: 21px;
+    }
+
+    .fuyuki .item1{
+        width: 30%;
+    }
+
+    .fuyuki .item2{
+        width: 30%;
+    }
+
+    .fuyuki .item3{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 635px){
+    section.contos .container-fuyuki .fuyuki h1{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .fuyuki .item1{
+        width: 45%;
+    }
+
+    .fuyuki .item2{
+        width: 45%;
+        background-position: 70%;
+    }
+
+    .fuyuki .item3{
+        width: 45%;
+    }
+}
+/*---------------------------MEDIA QUERRIES CONTOS NOC------------------------------------*/
+@media screen and (max-width: 1400px){
+
+    .noc .item2{
+        background-position: 15%;
+    }
+
+    .noc .item4{
+        background-position: 30%;
+    }
+}
+
+@media screen and (max-width: 1245px){
+    section.contos .container-noc .noc h1{
+        font-size: 21px;
+    }
+
+
+    .noc .item1{
+        width: 25%;
+    }
+
+    .noc .item2{
+        width: 25%;
+    }
+
+    .noc .item3{
+        width: 25%;
+    }
+
+    .noc .item4{
+        width: 25%;   
+    }
+}
+
+@media screen and (max-width: 795px){
+    section.contos .container-noc .noc h1{
+        font-size: 21px;
+    }
+
+    .noc .item1{
+        width: 30%;
+    }
+
+    .noc .item2{
+        width: 30%;
+    }
+
+    .noc .item3{
+        width: 30%;
+    }
+
+    .noc .item4{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 635px){
+    section.contos .container-noc .noc h1{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .noc .item1{
+        width: 45%;
+    }
+
+    .noc .item2{
+        width: 45%;
+    }
+
+    .noc .item3{
+        width: 45%;
+    }
+
+    .noc .item4{
+        width: 45%;
+    }
+}
+/*---------------------------MEDIA QUERRIES QUADRINHOS------------------------------------*/
+@media screen and (max-width: 795px){
+    section.quadrinhos .container h1{
+        font-size: 21px;
+    }
+    
+    section.quadrinhos .container .item1{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 635px){
+    section.quadrinhos .container h1{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    section.quadrinhos .container .item1{
+        width: 95%;
+    }
+}
+
+/*---------------------------MEDIA QUERRIES DIÁRIO------------------------------------*/
+@media screen and (max-width: 795px){
+    section.diario .container h1{
+        font-size: 21px;
+    }
+    
+    section.diario .container .item1{
+        width: 47%;
+    }
+
+    section.diario .container .item2{
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 635px){
+    section.quadrinhos .container h1{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    section.diario .container .item2{
+        background-position: 10%;
+    }
+}
